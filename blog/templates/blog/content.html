@@ -1,0 +1,32 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+    {%extends "base.html"%}
+
+    {%block title%} blog article{%endblock%}
+
+    {%block content%}
+
+    <div>
+        <h1>{{article.title}}</h1>
+    </div>
+    <div>
+        <div>
+            <p>
+                <span>{{article.author.username}}</span>
+                <span>{{publish}}</span>
+            </p>
+            <div>
+                {{article.body|linebreaksbr}}
+            </div>
+        </div>
+    </div>
+
+    {%endblock%}
+<!--</body>-->
+<!--</html>-->
